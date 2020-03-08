@@ -6,6 +6,10 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="About" />
+        <item
             android:id="@+id/nav_home"
             android:icon="@drawable/logo1"
             android:title="Real Time Monitoring" />
@@ -21,10 +25,7 @@
             android:id="@+id/nav_tools"
             android:icon="@drawable/ic_menu_manage"
             android:title="@string/menu_tools" />
-        <item
-            android:id="@+id/nav_about"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="About" />
+
         <item
             android:id="@+id/nav_corona_symptoms"
             android:icon="@drawable/ic_menu_manage"
@@ -32,7 +33,7 @@
     </group>
 
 
-    <item android:title="Communicate">
+<!--    <item android:title="Communicate">
         <menu>
             <item
                 android:id="@+id/nav_share"
@@ -43,6 +44,6 @@
                 android:icon="@drawable/ic_menu_send"
                 android:title="@string/menu_send" />
         </menu>
-    </item>
+    </item>-->
 
 </menu>

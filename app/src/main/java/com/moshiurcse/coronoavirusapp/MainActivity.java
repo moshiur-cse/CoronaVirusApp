@@ -90,10 +90,60 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_about) {
-            Toast.makeText(this, "Developed By Moshiur", Toast.LENGTH_LONG).show();
+            alertDialogBuilder=new AlertDialog.Builder(MainActivity.this);
+            alertDialogBuilder.setTitle("Moshiur Rahman Rimu");
+            alertDialogBuilder.setMessage("Programmer, Center for Environmental and Geographic Information Services (CEGIS)");
+            alertDialogBuilder.setCancelable(false);
+
+            alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.cancel();
+                }
+            });
+            /*alertDialogBuilder.setNeutralButton("OK", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.cancel();
+                }
+            });*/
+
+            AlertDialog alertDialog=alertDialogBuilder.create();
+            alertDialog.show();
         }
 
+
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        if(getFragmentManager().getBackStackEntryCount() > 0){
+            Toast.makeText(this, "Back Button Click", Toast.LENGTH_SHORT).show();
+            super.onBackPressed();
+        }else {
+            //super.onBackPressed();
+            alertDialogBuilder=new AlertDialog.Builder(MainActivity.this);
+            alertDialogBuilder.setTitle("Close");
+            alertDialogBuilder.setMessage("Do you want to close this apps?");
+            alertDialogBuilder.setCancelable(false);
+
+            alertDialogBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    finish();
+                }
+            });
+            alertDialogBuilder.setNeutralButton("No", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.cancel();
+                }
+            });
+            AlertDialog alertDialog=alertDialogBuilder.create();
+            alertDialog.show();
+        }
     }
 /*
     @Override

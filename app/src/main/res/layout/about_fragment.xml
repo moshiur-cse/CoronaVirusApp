@@ -5,11 +5,38 @@
     android:layout_height="match_parent"
     tools:context=".ui.about.AboutFragment">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15sp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+
+                android:src="@drawable/corona_virus"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textStyle="bold"
+
+            android:text="Corona Virus"/>
+
     <TextView
         android:id="@+id/aboutTV"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textStyle="italic"
+        android:textSize="16sp"
         android:text="@string/about_covid" />
+        </LinearLayout>
+    </ScrollView>
 
 <!--    <com.google.android.youtube.player.YouTubePlayerView
         android:layout_width="match_parent"
