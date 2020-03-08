@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/text_home"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:gravity="center"
+        android:padding="10sp"
+        android:text="Real Time Monitoring"
+        android:textColor="#FCFBFB"
+        android:textSize="28sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:gravity="center"
+        android:padding="10sp"
+        android:text="Data sources: WHO, CDC, ECDC, NHC and DXY which is provided by Johns Hopkins University"
+        android:textColor="#FCFBFB"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <!--android:text="Data sources: WHO, CDC, ECDC, NHC and DXY which is provided by Johns Hopkins University"-->
+    <!--https://www.arcgis.com/apps/opsdashboard/index.html#/85320e2ea5424dfaaa75ae62e5c06e61-->
+</androidx.constraintlayout.widget.ConstraintLayout>
