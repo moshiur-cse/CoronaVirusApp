@@ -40,4 +40,18 @@
         android:name="com.moshiurcse.coronoavirusapp.ui.send.SendFragment"
         android:label="@string/menu_send"
         tools:layout="@layout/fragment_send" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.moshiurcse.coronoavirusapp.ui.about.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/about_fragment" />
+
+    <fragment
+        android:id="@+id/nav_corona_symptoms"
+        android:name="com.moshiurcse.coronoavirusapp.ui.symptoms.CoronaSymptomsFragment"
+        android:label="Corona Virus Symptoms"
+        tools:layout="@layout/corona_symptoms_fragment" />
+
+
 </navigation>

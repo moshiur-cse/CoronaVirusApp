@@ -31,13 +31,13 @@
         android:background="#000"
         android:gravity="center"
         android:padding="10sp"
-        android:text="Data sources: WHO, CDC, ECDC, NHC and DXY which is provided by Johns Hopkins University"
+        android:text="Data sources: WHO, CDC, ECDC, NHC and DXY"
         android:textColor="#FCFBFB"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints" />
 
-
+    <!--which is provided by Johns Hopkins University-->
 
     <!--android:text="Data sources: WHO, CDC, ECDC, NHC and DXY which is provided by Johns Hopkins University"-->
     <!--https://www.arcgis.com/apps/opsdashboard/index.html#/85320e2ea5424dfaaa75ae62e5c06e61-->
