@@ -2,18 +2,64 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:background="#000"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text_tools"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:textColor="#FFFEFE"
+                android:textStyle="bold"
+
+                android:text="Prevention"/>
+
+            <TextView
+                android:id="@+id/aboutTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:textColor="#FFFEFE"
+                android:textSize="16sp"
+                android:text="Surgical masks in the community are only helpful in preventing people who have coronavirus disease from spreading it to others. If you are well, you do not need to wear a surgical mask as there is little evidence supporting the widespread use of surgical masks in healthy people to prevent transmission in public.\n\n
+Everyone should practise good hygiene to protect against infections. Good hygiene includes:\n\n
+1. washing your hands often with soap and water\n
+2. using a tissue and cover your mouth when you cough or sneeze\n
+3. avoiding close contact with others, such as touching\n\n\n
+If you have a confirmed case, you need to isolate yourself to prevent it spreading to other people."
+                />
+
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:textColor="#FFFEFE"
+                android:textStyle="bold"
+                android:text="Diagnosis"/>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:textColor="#FFFEFE"
+                android:textSize="16sp"
+                android:text="If you become unwell and think you may have symptoms of coronavirus, seek medical attention.\n\n
+Call ahead of time to book an appointment. Tell your doctor about your symptoms, travel history and any recent close contact with someone who has coronavirus.\n\n
+If you must leave home to see your doctor, wear a surgical mask (if you have one) to protect others.\n\n
+If you have serious symptoms such as difficulty breathing, call 000 for urgent medical help."/>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,42 +3,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000"
     tools:context=".ui.symptoms.CoronaSymptomsFragment">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Watch for symptoms"
-        android:textSize="28sp"/>
-
-        <TextView
+        >
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Reported illnesses have ranged from mild symptoms to severe illness and death for confirmed coronavirus disease 2019 (COVID-19) cases."
-            android:textSize="18sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="--Fever"
-            android:textSize="18sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="--Cough"
-            android:textSize="18sp"/>
+            android:layout_height="match_parent"
+            android:padding="15sp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="--hortness of breath"
-            android:textSize="18sp"/>
+                android:src="@drawable/coronavirus_mask"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:textColor="#FFFEFE"
+                android:textStyle="bold"
 
+                android:text="Symptoms(COVID-19)"/>
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/aboutTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:textColor="#FFFEFE"
+                android:textSize="16sp"
+                android:text="Symptoms can range from mild illness to pneumonia. Some people will recover easily, and others may get very sick very quickly. People with coronavirus may experience:" />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#FFFEFE"
+                android:textStyle="bold"
+                android:text="1. fever"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#FFFEFE"
+                android:textStyle="bold"
+                android:text="2. flu-like symptoms such as coughing, sore throat and fatigue"/>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#FFFEFE"
+                android:textStyle="bold"
+                android:text="3. shortness of breath"/>
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

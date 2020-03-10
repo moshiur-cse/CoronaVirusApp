@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000"
     tools:context=".ui.about.AboutFragment">
 
     <ScrollView
@@ -17,15 +18,15 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-
-                android:src="@drawable/corona_virus"/>
+                android:src="@drawable/banner"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="28sp"
+            android:textSize="26sp"
+            android:textColor="#FFFEFE"
             android:textStyle="bold"
 
-            android:text="Corona Virus"/>
+            android:text="Coronavirus (COVID-19)"/>
 
     <TextView
         android:id="@+id/aboutTV"
@@ -33,8 +34,9 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
         android:textStyle="italic"
+        android:textColor="#FFFEFE"
         android:textSize="16sp"
-        android:text="@string/about_covid" />
+        android:text="Coronavirus (COVID-19) is a respiratory illness caused by a new virus. Symptoms range from a mild cough to pneumonia. Some people recover easily, others may get very sick very quickly. There is evidence that it spreads from person to person. Good hygiene can prevent infection." />
         </LinearLayout>
     </ScrollView>
 

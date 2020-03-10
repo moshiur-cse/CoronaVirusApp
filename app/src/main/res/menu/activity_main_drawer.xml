@@ -6,30 +6,43 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_about"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="About" />
-        <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/logo1"
+
             android:title="Real Time Monitoring" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
-        <item
-            android:id="@+id/nav_tools"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/menu_tools" />
+            android:id="@+id/nav_about"
 
+            android:title="About" />
         <item
             android:id="@+id/nav_corona_symptoms"
-            android:icon="@drawable/ic_menu_manage"
+
             android:title="Symptoms" />
+        <item
+            android:id="@+id/nav_tools"
+
+            android:title="Prevention" />
+
+        <item
+            android:id="@+id/nav_slideshow"
+
+            android:title="Treatment" />
+
+        <item
+            android:id="@+id/nav_gallery"
+
+            android:title="@string/menu_gallery" />
+
+        <!--<item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />-->
+
+
+
+
+
+
+
     </group>
 
 

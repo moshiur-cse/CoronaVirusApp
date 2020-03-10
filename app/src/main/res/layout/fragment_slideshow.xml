@@ -2,18 +2,61 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:background="#000"
     android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/text_slideshow"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:textColor="#FFFEFE"
+                android:textStyle="bold"
+
+                android:text="Treatment"/>
+
+            <TextView
+                android:id="@+id/aboutTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:textColor="#FFFEFE"
+                android:textSize="16sp"
+                android:text="There is no treatment for coronavirus, but medical care can treat most of the symptoms. Antibiotics do not work on viruses.\n\n
+If you have been diagnosed with coronavirus, isolate yourself in your home." />
+
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:textColor="#FFFEFE"
+                android:textStyle="bold"
+
+                android:text="How to isolate yourself"/>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:textColor="#FFFEFE"
+                android:textSize="16sp"
+                android:text="Do not go to public places, such as work, school, shopping centres, childcare or university. If possible, ask other people to get food and other necessities for you and leave them at your front door.\n\n
+Only people who usually live with you should be in your home. Do not let in visitors.\n\n
+You do not need to wear a mask in your home.\n\n
+If you need to leave home to seek medical attention, wear a surgical mask (if you have one) to protect others." />
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

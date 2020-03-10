@@ -50,7 +50,7 @@
     <fragment
         android:id="@+id/nav_corona_symptoms"
         android:name="com.moshiurcse.coronoavirusapp.ui.symptoms.CoronaSymptomsFragment"
-        android:label="Corona Virus Symptoms"
+        android:label="Symptoms"
         tools:layout="@layout/corona_symptoms_fragment" />
 
 
