@@ -10,11 +10,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="15sp"
             android:orientation="vertical">
+            <ToggleButton
+                android:layout_gravity="right"
+                android:id="@+id/languageTB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="ENGLISH"
+                android:textOff="বাংলা"
+                android:text="Bangla"/>
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -25,19 +34,43 @@
             android:textSize="26sp"
             android:textColor="#FFFEFE"
             android:textStyle="bold"
-
+            android:id="@+id/engTitleTV"
             android:text="Coronavirus (COVID-19)"/>
 
+
     <TextView
-        android:id="@+id/aboutTV"
+        android:id="@+id/engDesTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
         android:textStyle="italic"
         android:textColor="#FFFEFE"
         android:textSize="16sp"
+
         android:text="Coronavirus (COVID-19) is a respiratory illness caused by a new virus. Symptoms range from a mild cough to pneumonia. Some people recover easily, others may get very sick very quickly. There is evidence that it spreads from person to person. Good hygiene can prevent infection." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:textColor="#FFFEFE"
+                android:textStyle="bold"
+                android:id="@+id/banglaTitleTV"
+                android:visibility="gone"
+                android:text="করোনাভাইরাস (COVID-19)"/>
+            <TextView
+                android:id="@+id/banglaDesTV"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:textColor="#FFFEFE"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:text="করোনাভাইরাস (COVID-19) হ'ল একটি নতুন ভাইরাসজনিত শ্বাসকষ্ট রোগ । লক্ষণগুলি গুলো শুরু হয়  হালকা কাশি থেকে নিউমোনিয়া পর্যন্ত। কিছু লোক খুব সহজেই সুস্থ হয়ে ওঠে, অন্যেরা খুব দ্রুত অসুস্থ হয়ে পড়তে পারে। এটি একটি ব্যক্তি থেকে অন্য ব্যক্তিতে দ্রুত ছড়িয়ে পড়ে। ভাল স্বাস্থ্যবিধি এই সংক্রমণ রোধ করতে পারে।"/>
+
         </LinearLayout>
+
+
     </ScrollView>
 
 <!--    <com.google.android.youtube.player.YouTubePlayerView

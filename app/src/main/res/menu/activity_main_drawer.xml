@@ -9,6 +9,11 @@
             android:id="@+id/nav_home"
 
             android:title="Real Time Monitoring" />
+
+        <item
+            android:id="@+id/nav_bd_map"
+            android:title="Bangladesh Map" />
+
         <item
             android:id="@+id/nav_about"
 
@@ -29,7 +34,6 @@
 
         <item
             android:id="@+id/nav_gallery"
-
             android:title="@string/menu_gallery" />
 
         <!--<item

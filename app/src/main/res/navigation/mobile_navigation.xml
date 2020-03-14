@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_about">
 
     <fragment
         android:id="@+id/nav_home"
@@ -52,6 +52,12 @@
         android:name="com.moshiurcse.coronoavirusapp.ui.symptoms.CoronaSymptomsFragment"
         android:label="Symptoms"
         tools:layout="@layout/corona_symptoms_fragment" />
+
+    <fragment
+        android:id="@+id/nav_bd_map"
+        android:name="com.moshiurcse.coronoavirusapp.ui.bd_map.BdMapFragment"
+        android:label="Covid-19 in BD"
+        tools:layout="@layout/fragment_bd_map" />
 
 
 </navigation>
