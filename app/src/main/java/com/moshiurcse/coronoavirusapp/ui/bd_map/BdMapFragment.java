@@ -98,7 +98,7 @@ public class BdMapFragment extends Fragment{
                 .position(position)
                 .title("Dhaka")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED))
-                .snippet("Total: 3 | Revoer: 0 | Active: 3")
+                .snippet("Total Confirmed: 10 | Recovered: 3 | Active: 7")
         );
 
 
